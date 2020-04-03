@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Giriş</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="üstmenü">
+        <img  src="photo/jsrenk.jpg" alt="" width="100%" height="200&">
+        
+    </div>
+    
+    <div class="yanmenü"  >
+        
+        <img src="photo/768px-Unofficial_JavaScript_logo_2.svg.jpg" width="100%"  alt="">
+    
+        <!--yan menü table-->
+        <table border="1" width="100%" >
+            <tr>
+                <td><a href="anasayfa.html">JavaScript Giriş--> </a> </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="SyntaxYapısı.html">JavaScript Yazılım (Syntax) yapısı--></a> 
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="degiskenler.html">Değişkenler--></a> 
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="paes/opratorler.html">Operatörler--></a> 
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="aritmetik.html">Aritmetik--></a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="veritipleri.html">Veri Tipleri--></a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="fonksiyonyapisi.html">Fonksiyon Yapısı--></a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="Olaylar.html">Olaylar (Events)--></a> 
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="Stringler.html">Stringler, Sayılar, Diziler ve Diziİşlemleri--></a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="kosulyapisi.html">If koşul yapıları--></a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="donguler.html">Döngüler--></a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="tıpdonusumler.html">Tip Dönüşümleri--></a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="calismayapisi.html">Çalışma yapısı ve genel mimarisi--></a>
+                </td>
+            </tr>
+
+        </table>
+    </div>
+
+    <div class="konudivi">
+        <h1>JavaScript NEDİR?</h1>
+        <p>JavaScript, yaygın olarak web tarayıcılarında kullanılmakta olan bir betik dilidir. JavaScript ile yazılan istemci tarafı betikler sayesinde tarayıcının kullanıcıyla
+            etkileşimde bulunması, tarayıcının kontrol edilmesi, asenkron bir şekilde sunucu ile iletişime geçilmesi ve web sayfası içeriğinin değiştirilmesi gibi işlevler sağlanır. 
+            JavaScript, Node.js gibi platformlar sayesinde sunucu tarafında da yaygın olarak kullanılmaktadır. <br>
+
+            <br>İlk olarak bir Netscape çalışanı olan Brendan Eich tarafından geliştirilen ve 1997 yılından beri bir ECMA standardı olan JavaScript, günümüzde Mozilla Vakfı öncülüğünde
+            özgür yazılım topluluğu tarafından geliştirilmekte ve bakımı yapılmaktadır.<br>
+           <br> Web sayfalarının görünümünün mükemmelleştirilmesi, işlevselliğinin artırılması ve dinamik web sayfaları tasarlanması amacıyla JavaScript, HTML kodu içinde gömülü olarak 
+           (embedded) kullanılabilir. JavaScript, bir programlama dili disiplini ve özelliklerine sahiptir.<br>
+           
+           <br>Aralarında isim benzerliği olmasına rağmen, Java ile JavaScript arasında teknik olarak çok önemli farklılıklar mevcuttur. Aşağıdaki tabloda bu farklılıklar vurgulanmaktadır:<br>
+        </p>
+        <div id="javascriptfark">
+            <h2>JavaScript </h2>
+            İstemci (client) tarafından (örn. web tarayıcı) yorumlanır (derlenmez).<br>
+            <br>Nesneye dayalı bir dildir. Nesne tipleri arasında farklılık yoktur. Herhangi bir nesneye yeni özellik ve metotlar dinamik olarak eklenir.Nesneye yönelik teorinin miras 
+            alma (inheritance) özelliği prototip mekanizmasıyla gerçekleştirilir.<br>
+            <br>Değişken veri tip bildirimi mekanizması yoktur.<br>
+            <br> Dinamik bağlama mekanizması kullanılır yani nesneye verilen referanslar çalışma zamanında (run time) kontrol edilir.
+
+        </div>
+        <div id="javafark">
+            <h2>Java</h2>
+            Derlenmiş bytecode denilen program istemcide çalıştırılır. <br>
+            <br>Nesneye yönelik bir dildir. Nesneler çeşitli sınıflara ayrılmıştır ve miras alma mekanizması, sınıf hiyerarşisi sayesinde gerçekleştirilir. Sınıf ve sınıf örneklerine 
+            özellik ve metotlar dinamik olarak eklenemez.<br>
+            <br>Değişken tip bildirimi zorunludur.<br>
+            <br>Statik bağlama mekanizması kullanılır yani nesne referansları derleme zamanında (compile time) kontrol edilir.<br>
+        </div>
+
+        <div class="konudivi2">
+
+            <h1>JavaScript ile Basit Bir Program</h1>
+            <p>Önceki eğitimlerde JavaScript kodlarının bir HTML belgesinde kullanımını görmüştük. Şimdi basit bir örnekle kullanımını hatırlayalım:</p>
+            <p style="border: 1px;" >
+                <img id="jsgirisfoto" src="photo/jsgiris1.jpg " alt="">
+                <br> Bir HTML kodu içine bir JavaScript kodunu gömmek için, bu kod ile ilişkili komutları,
+                <script>  </script> HTML etiketleri arasına yerleştirmek gerekir.<br>
+                HTML içinde kullanılan betik dilinin, JavaScript olduğunu belirtmek için bu dilin adı çift tırnak içinde,<br>
+                <br> <script language="javascript"></script><br>
+                şeklinde belirtilmelidir.<br>
+
+                <br> Yukarıdaki örnek JavaScript kodunda, Document (Belge), üzerine bilgi yazdırılacak olan nesneyi belirlemektedir. write metodu bu nesne üzerine string (karakter dizisi)
+                türünde bir veri yazmaktadır. <br>
+                <br> write metodu yazma işini bir önceki adımda kalınan satırdan itibaren devam ettirir. writeln metodu ise yazma işlemini yeni bir satırın başından itibaren başlatmaktadır.
+
+                Write ya da writeln metotlarının argümanı olarak, " " sembolleri arasına alınmış olan HTML komutları kullanılabilir. Yukarıdaki örnekte başlık yazdırma işlemi bu şekilde 
+                gerçekleştirilmektedir. JavaScript kodunda, her JavaScript deyiminin bir noktalı virgül (;) sembolüyle sona erdiğine dikkat etmelisiniz.
+            </p>
+    
+        </div>
+
+
+
+
+    </div>
+
+</body>
+</html>

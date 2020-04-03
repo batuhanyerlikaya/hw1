@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        @import "style.css";
+        .red{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="üstmenü">
+        <img  src="photo/jsrenk.jpg" alt="" width="100%" height="180px">
+        
+    </div>
+    
+    <div class="yanmenü"  >
+        
+        <img src="photo/768px-Unofficial_JavaScript_logo_2.svg.jpg" width="100%"  alt="">
+    
+        <!--yan menü table-->
+        <table border="1" width="100%" >
+            <tr>
+                <td><a href="anasayfa.html">JavaScript Giriş--> </a> </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="SyntaxYapısı.html">JavaScript Yazılım (Syntax) yapısı--></a> 
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="degiskenler.html">Değişkenler--></a> 
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="opratorler.html">Operatörler--></a> 
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="aritmetik.html">Aritmetik--></a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="veritipleri.html">Veri Tipleri--></a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="fonksiyonyapisi.html">Fonksiyon Yapısı--></a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="Olaylar.html">Olaylar (Events)--></a> 
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="Stringler.html">Stringler, Sayılar, Diziler ve Diziİşlemleri--></a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="kosulyapisi.html">If koşul yapıları--></a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="donguler.html">Döngüler--></a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="tıpdonusumler.html">Tip Dönüşümleri--></a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="calismayapisi.html">Çalışma yapısı ve genel mimarisi--></a>
+                </td>
+            </tr>
+
+        </table>
+    </div>
+
+    <div class="konudivi">
+        <h1>JavaScript Yazım Kuralları ve JavaScript Syntax</h1>
+        <p>
+            Javascript Yazım Kuralları bazı durumlarda html’e bazı durumlar da ise bir back-end yazılım diline (örn: C#)  benzemektedir. Yazılım dünyasında genel olarak bir dilin  
+            yazım kurallarına,
+             ‘söz dizimi’ yani orjinal adıyla ‘Syntax’ denmektedir. Bizde bunu en uygun şekilde “Yazım Kuralları” olarak Türkçe’ye çevirmişiz.  Bilinmesi gereken şeyleri hiç bir zaman 
+             ezberlemenize 
+             gerek yok. Doğru ve olması gereken gibi kod yazdığınız da bu kurallar artık sizin için standart bir yazım biçimine dönüşecektir. Yapmanız gereken tek şey, başlangıçta bu
+              zemini iyi
+              oturtabilmektir. Daha önce 
+            farklı bir front-end (html, css gibi) veya back-end (c#, java gibi) dili ile uygulama geliştirdiyseniz bu yazılım kuralları ve Javascript Syntax’ı size çok da yabancı
+             gelmeyecektir.
+        </p>
+        <h2 class="red" >1- Javascript  Boşluk Kullanımı </h2>
+        <img id="syntaxfoto1" src="photo/syntaxphoto1.png" alt="">
+        <p>           
+            Javascript,   html  gibi  boşluklara  duyarsızdır.  Yani,  yazdığınız  bir  kod  satırında  ki  bıraktığınız  boşluklar  yada  tanımladığınız  bir  değişkene  atadığınız  değer  
+            içerisine  bıraktığınız  boşluklar  işlevsizdir.  Bunu  iki  farklı  yol  ile  deniyeceğiz.  Birincisi  document.write  metodu  ile  ekrana  yazarak,  diğer  ise  Google  Chrome 
+            (F12)  JavaScript  konsol  ekranına  yazdırarak  göreceğiz..
+        </p>
+        <br>
+        <p>
+            <img id="syntaxphoto2" src="photo/syntaxphoto1.1.jpg" alt=""><br><br>
+            <p style="margin-left: 25%;">EKRAN ÇIKTISI : </p> 
+        </p>
+        <br><br>
+        <p>
+            Üst kısımda yer alanlar document.write() ile web sayfasına yazdırdığımız yazılar, alttaki ise console.log() ile Google Chrome console 
+            ekranına yazdırdığımız gene aynı değişkenler. Yukarıdaki örnek de görüldüğü gibi değişken tanımlarken bıraktığınız boşluklar document.write() 
+            için önemsiz fakat console.log() tarafından algılanmaktadır.
+        </p>
+        <br> <br>
+        <h2 class="red" >2- Küçük ve Büyük Harf Duyarlılığı </h2>
+        <p>Javascript yazılım dilinde küçük ve büyük harf birbirinden farklı olarak algılanmaktadır. Tıpkı C# Dilinde olduğu gibi aynı özellik Javascript dilinde de vardır. 
+        Yani  küçük “m” harfi ile büyük “M” harfi JavaScript’in gözünde farklıdır. Aşağıda ki örnekle bunu görebiliriz.</p> 
+        <img src="photo/syntaxphoto3.jpg" alt="">
+        <h2 class="red">3- Tek ve Çift Tırnak Kullanımı</h2>
+        <img id="syntaxfoto4" src="photo/syntaxphoto4.jpg" alt="">
+        <p>JavaScript Yazım Kuralları ‘nda bu konuda herhangi bir kural söz konusu değildir. Yani isterseniz tek tırnak isterseniz de çift tırnak kullanabilirsiniz. Dikkat etmeniz 
+            gereken tek nokta “Tutarlı Olmak”.. Yani, String bir değişken tanımlarken çift tırnak ile başladıysanız çift tırnak ile bitirin. Yada aynısı tek tırnak için de geçerli. 
+            Bazı özel durumlarda olay biraz daha farklı. Örneğin JavaScript tek & çift tırnak kuralına bakmaz iken, bir JavaScript kütüphanesi olan jQuery , 
+            string ifadelerin kesinlikle “çift tırnak” ile yazılmasını beklemektedir.. <br> <br>
+              Örnekte de görüldüğü gibi benzer değişkenler hem tek hemde çift tırnak ile tanımlanmıştır.  console.log() metodu ile ekrana yazdırdığımız da aynı sonuçları görürüz. </p>
+              <br> <br>
+        <h2 class="red">4- Özel Karakter Kullanımı</h2>
+        <img id="syntaxphoto5" src="photo/syntaxphoto5.jpg" alt="">
+        <br> <br><br><br>
+        <p>
+            Bazı karakterler JavaScript tarafından farklı anlamlara geldiği için onları direk kod blokları içerisinde kullanamayız. Örneğin normal şartlar da çift tırnak işaretini (” “)
+            işaretini string ifade tanımlamak için kullanıyoruz aslında orada çift tırnak kullanımı zorunlu ve bunu string ifadenin başlangıcı ve bitişi olarak kabul etmektedir. <br> <br> O halde ben 
+            string bir ifade içerisinde bir kelimeyi çift tırnak içerisinde yazmak istersem hata alırım.
+            Ama kullanacağımız özel bir ayıraç sayesinde bu durumu kolayca çözebilir. Ters Slash işareti ile bu sorunu rahatça aşabiliriz.
+        </p>
+        <br> <br>
+        <h2 class="red">4- Özel Karakter Kullanımı</h2>
+        <img id="syntaxfoto6" src="photo/syntaxphoto6.jpg" alt="">
+        <br> <br><br> 
+        <p>JavaScript kendi alt yapısını oluştururken bazı kelimeleri bazı kalıplar için kullanmıştır. Bunlara “JavaScript Rezerve Kelimeleri” veya “Ayrılmış Kelimeler” adını vermiştir. 
+            Orjinali ise başlıkta kullandığım “Reserved Words” tanımıdır. Peki bu hususta bizi ilgilendiren konu ne? Değişken, fonksiyon, metot veya yeni bir nesne tanımlarken, tanımladığımız 
+            bu nesnelere kesinlikle bu isimleri veremeyiz.<br> <br> Yani JavaScript’de döngüler için kullanılan “for”, “while” veya değişken isimleri “var”, “int” gibi kalıplaşmış ve farklı işlevleri
+             olan
+             kelimeler, kesinlikle yeni tanımladığınız bir
+             nesnede olmaması lazım. Zaten JavaScript’i az da olsa öğrendiğinizde ihtiyacınız kalmayacak fakat tam listeyi ben gene sizlerle paylaşıyorum.
+        </p>
+
+             
+    </div>
+    
+</body>
+</html>

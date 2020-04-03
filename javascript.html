@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    
+    <!--bu sayfaya özel css kodları-->
+    <style>
+        body, html {
+            height: 100%;
+        }
+        * {
+            box-sizing: border-box;
+        }
+        .arkaplanfoto{
+            background-image: url("assets/arkaplanfoto.jpg");
+            filter: blur(8px);
+            -webkit-filter: blur(8px);
+            /* Full height */
+            height: 100%;
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;        
+        }
+        .girisekrani {
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+            border: 3px solid #969393;
+            color: white;
+            font-weight: bold;
+            
+            position: absolute;
+            top: 30%;
+            left: 30%;
+            
+            z-index: 2;
+            width: 40%;
+            padding: 20px;
+            text-align: center;
+        }
+        .hadibasla{
+            font-size: 50px;
+            background-color: #F0DB4F;    
+            font-weight: bold;
+            border: 1px solid #969393;
+            position: absolute;
+            top: 75%;
+            left: 40%;
+            
+            z-index: 2;
+            width: 20%;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+        }
+        .girislinki{
+            text-decoration: none;
+        }
+        span{
+            color: darkblue;
+        }
+        p{
+            font-size: 21px;
+        }
+    </style>
+</head>
+<body>
+    <div class="arkaplanfoto"></div>
+    
+    <div class="girisekrani">
+        <img width="180px" src="assets/768px-Unofficial_JavaScript_logo_2.svg.jpg " alt="">
+        <h1>Javascript Nedir?</h1>
+        <p>JavaScript Web sayfaları için yeni bir scripttir ve özelliği HTML sayfanızın içine yerleştirilebilmesidir. 
+            JavaScript ile ilginç elemanlar kullanarak HTML sayfanızı geliştirecek birçok olanağa sahip olacaksınız. 
+            Örneğin kullanıcının sayfanızı incelerken yaptığı hareketlere anında karşılık verebilirsiniz. 
+        </p>
+    </div>    
+    <div class="hadibasla">
+        <a href="pages/anasayfa.html" class="girislinki"><span>Hadi Başla</span> </a>
+    </div>
+</body>
+</html>
